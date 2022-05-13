@@ -5,15 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": "prettier --write --ignore-unknown"
+    "lint": "vue-cli-service lint",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "dependencies": {
     "core-js": "^3.8.3",

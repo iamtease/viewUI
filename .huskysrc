@@ -1,8 +1,0 @@
-{
-  "hooks": {
-    // 提交commit时触发
-    "pre-commit": "lint-staged",
-    // 检测commit的message时触发
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-  }
-}
